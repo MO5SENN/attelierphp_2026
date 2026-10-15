@@ -2,11 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Formulaire PHP</title>
+    <title>Formulaire</title>
 </head>
 <body>
+    <h1>Formulaire</h1>
+
     <form method="get">
-        <label for="nom">Votre nom : </label>
+        <label for="nom">Votre nom :</label>
         <input type="text" id="nom" name="nom">
         <button type="submit">Envoyer</button>
     </form>
@@ -17,6 +19,5 @@
         echo "<p>Bonjour $nom !</p>";
     }
     ?>
-
 </body>
 </html>

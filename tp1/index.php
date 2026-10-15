@@ -2,18 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon profil</title>
+    <title>Mon premier programme PHP</title>
 </head>
-
 <body>
+    <h1>Bienvenue dans mon application PHP</h1>
 
-<h1>Bienvenue dans mon application</h1>
+    <?php
+    $nom = "Ali";
+    $prenom = "Ahmed";
+    $formation = "Informatique";
+    $niveau = "Licence";
+    $annee = "2025/2026";
+    ?>
 
-<p>Nom : <?php echo "Ahmed"; ?></p>
-<p>Prénom : <?php echo "Adem"; ?></p>
-<p>Formation : <?php echo "Informatique"; ?></p>
-<p>Niveau : <?php echo "2ème année"; ?></p>
-<p>Année universitaire : <?php echo "2026/2027"; ?></p>
-
+    <p>Nom : <?php echo $nom; ?></p>
+    <p>Prenom : <?php echo $prenom; ?></p>
+    <p>Formation : <?php echo $formation; ?></p>
+    <p>Niveau : <?php echo $niveau; ?></p>
+    <p>Annee universitaire : <?php echo $annee; ?></p>
 </body>
 </html>
