@@ -1,0 +1,69 @@
+# Q1 Que représente une ligne de cette table ?
+Une ligne représente un étudiant avec toutes ses informations (nom, prénom, âge, formation et moyenne).
+
+# Q2 Que représente une colonne ?
+Une colonne représente une caractéristique ou une information des étudiants (nom, âge, moyenne, )
+
+# Q3 Pourquoi chaque étudiant possède-t-il un identifiant ?
+Chaque étudiant possède un identifiant unique pour le distinguer des autres étudiants et éviter les confusions.
+
+# Q4  Pourquoi une base de données peut-elle être plus pratique pour rechercher et modifier des données ?
+Une base de données permet de rechercher, ajouter, modifier et supprimer des informations rapidement et facilement.
+
+# Q5 Pourquoi id est-il une clé primaire ?
+L'id est une clé primaire car il identifie chaque étudiant de manière unique. Il ne peut pas être NULL ni avoir de doublons.
+
+# Q6 Pourquoi nom est-il déclaré NOT NULL ?
+NOT NULL signifie que le nom est obligatoire. Il ne peut pas être vide (NULL).
+
+# Q7 Que signifie AUTO_INCREMENT ?
+AUTO_INCREMENT permet de générer automatiquement un nouvel identifiant pour chaque étudiant.
+# Q8 Pourquoi la moyenne n'est-elle pas stockée dans une colonne de type texte ?
+La moyenne est une valeur numérique. On utilise un type numérique (DECIMAL ou FLOAT) pour effectuer des calculs comme AVG(), MAX() et MIN().
+# Q9 Que se passe-t-il si l'on tente d'insérer NULL dans une colonne obligatoire ?
+MySQL refuse l'insertion et affiche une erreur, car la colonne obligatoire ne peut pas contenir une valeur NULL.
+# Q10 Quel est le rôle de INSERT INTO ?
+INSERT INTO permet d'ajouter de nouvelles données dans une table.
+# Q11 . Quel est le rôle de SELECT ?
+SELECT permet de récupérer et d'afficher les données d'une table.
+# Q12 À quoi sert la clause WHERE ?
+WHERE permet de filtrer les données selon une condition.
+# Q13 À quoi sert ORDER BY ?
+ORDER BY permet de trier les résultats dans un ordre croissant (ASC) ou décroissant (DESC).
+# Q14 Quel est le rôle de UPDATE ?
+UPDATE permet de modifier les données existantes dans une table.
+
+# Q15 Quel est le rôle de DELETE ?
+DELETE permet de supprimer des lignes dans une table.
+
+# Q16 Pourquoi faut-il vérifier attentivement la clause WHERE ?
+l faut vérifier attentivement WHERE pour éviter de modifier ou supprimer les mauvaises lignes. Sans WHERE, toutes les lignes peuvent être modifiées ou supprimées.
+
+# Q17 Pourquoi vaut-il mieux utiliser un identifiant plutôt qu'un nom pour modifier un étudiant ?
+Il vaut mieux utiliser un identifiant car il est unique. Cela permet de modifier le bon étudiant sans risquer de modifier plusieurs étudiants ayant le même nom.
+
+# Q18 1. Quel est le rôle de new PDO(...) ?
+new PDO() permet de créer une connexion entre PHP et une base de données.
+
+# Q19 À quoi sert require_once ?
+require_once permet d'inclure un fichier PHP une seule fois pour éviter les inclusions répétées.
+
+# Q20 Pourquoi utilise-t-on __DIR__ pour construire le chemin du fichier ?
+_DIR__ permet de construire un chemin absolu à partir du dossier du fichier actuel. Cela évite les erreurs de chemin. 
+# Q21 Pourquoi ne doit-on pas afficher les détails techniques d'une erreur de connexion aux utilisateurs ?
+
+Il ne faut pas afficher les détails techniques pour protéger les informations sensibles et éviter les risques de sécurité.
+# Q 22 Pourquoi les identifiants de connexion doivent-ils rester confidentiels ?
+
+Les identifiants doivent rester confidentiels pour empêcher les accès non autorisés à la base de données et protéger les informations.
+
+# Q23 Quel est le rôle de $pdo->query() ?
+permet d'exécuter une requête SQL directement dans la base de données.
+# Q24  Que retourne fetchAll() ?
+retourne toutes les lignes du résultat sous forme de tableau (Array).
+# Q25 Pourquoi utilise-t-on foreach ?
+permet de parcourir tous les éléments d'un tableau pour afficher ou traiter chaque étudiant.
+# Q26 Pourquoi utilise-t-on htmlspecialchars() lors de l'affichage des chaînes ?
+permet de protéger la page contre les attaques XSS en transformant les caractères spéciaux HTML en entités HTML.
+# Q27 Quelle différence existe entre les données stockées dans la base et le HTML généré ?
+La base de données stocke les informations de manière permanente, tandis que le HTML généré sert à présenter ces informations à l'utilisateur dans le navigateur.
